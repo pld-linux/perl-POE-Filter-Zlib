@@ -8,18 +8,18 @@
 Summary:	POE::Filter::Zlib - A POE filter wrapped around Compress::Zlib
 Summary(pl.UTF-8):	POE::Filter::Zlib - filtr POE zbudowany wokół Compress:Zlib
 Name:		perl-POE-Filter-Zlib
-Version:	1.93
+Version:	2.02
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/POE/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	7bef3ea533effb4888448d6af4f8a70e
+# Source0-md5:	ab66c678dc30dc568f397a4a2f227c5a
 URL:		http://search.cpan.ogr/dist/POE-Filter-Zlib/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Compress-Zlib >= 1.34
+BuildRequires:	perl-IO-Compress >= 2.021
 BuildRequires:	perl-POE >= 0.38
 %endif
 BuildArch:	noarch
